@@ -18,25 +18,30 @@ export default function ProductShowcase({ onSelectProduct }: ProductShowcaseProp
     // Only register on client
     gsap.registerPlugin(ScrollTrigger);
 
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      { translateX: 0 },
-      {
-        translateX: "-200vw", // Total width of extra scrolled area (3 viewports total)
-        ease: "none",
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          pin: true,
-          scrub: 1,
-          start: "top top",
-          end: () => `+=${triggerRef.current?.offsetWidth}`,
-          invalidateOnRefresh: true,
-        },
-      }
-    );
+    let mm = gsap.matchMedia();
+
+    // Only apply horizontal scroll pinning on desktop and tablet
+    mm.add("(min-width: 768px)", () => {
+      gsap.fromTo(
+        sectionRef.current,
+        { translateX: 0 },
+        {
+          translateX: "-200vw", // Total width of extra scrolled area (3 viewports total)
+          ease: "none",
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            pin: true,
+            scrub: 1,
+            start: "top top",
+            end: () => `+=${triggerRef.current?.offsetWidth}`,
+            invalidateOnRefresh: true,
+          },
+        }
+      );
+    });
 
     return () => {
-      pin.kill();
+      mm.revert();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
@@ -60,11 +65,11 @@ export default function ProductShowcase({ onSelectProduct }: ProductShowcaseProp
         </p>
       </div>
 
-      {/* Horizontal Scroll Area */}
-      <div className="flex" style={{ width: "300vw" }}>
+      {/* Showcase Scroll Area (Horizontal on desktop, Vertical on mobile) */}
+      <div className="w-full md:w-[300vw] overflow-visible">
         <div
           ref={sectionRef}
-          className="flex gap-8 px-6 md:px-16"
+          className="flex flex-col md:flex-row items-center md:items-stretch gap-8 px-6 md:px-16 w-full md:w-auto"
           style={{ willChange: "transform" }}
         >
           {products.map((product) => (
@@ -76,7 +81,7 @@ export default function ProductShowcase({ onSelectProduct }: ProductShowcaseProp
           ))}
 
           {/* Catalog End Card */}
-          <div className="w-[30vw] md:w-[24vw] min-w-[280px] h-[55vh] flex flex-col justify-between p-8 rounded-3xl border border-dashed border-card-border bg-card-bg/20 backdrop-blur-md self-center flex-shrink-0">
+          <div className="w-[85vw] sm:w-[60vw] md:w-[24vw] max-w-[500px] h-[380px] md:h-[550px] flex flex-col justify-between p-8 rounded-3xl border border-dashed border-card-border bg-card-bg/20 backdrop-blur-md self-center flex-shrink-0">
             <div>
               <span className="text-pink-accent font-outfit text-sm font-medium">Bespoke Design</span>
               <h3 className="text-2xl md:text-3xl font-bold font-outfit mt-4 text-white">Have a unique idea?</h3>
