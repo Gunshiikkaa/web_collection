@@ -34,7 +34,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-9999 flex items-center justify-center p-4 sm:p-6 md:p-10 select-none">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center p-0 md:p-10 select-none">
           {/* Backdrop Blur */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -50,12 +50,13 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 30 }}
             transition={{ type: "spring", damping: 25, stiffness: 220 }}
-            className="relative w-full max-w-6xl h-[85vh] sm:h-[80vh] md:h-[75vh] bg-[#09090b] border border-card-border rounded-3xl overflow-y-auto md:overflow-hidden shadow-2xl flex flex-col md:flex-row z-10"
+            className="relative w-full h-full md:h-[75vh] md:max-w-6xl bg-[#09090b] border-none md:border md:border-card-border rounded-none md:rounded-3xl overflow-y-auto md:overflow-hidden shadow-2xl flex flex-col md:flex-row z-10"
+            data-lenis-prevent
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-5 right-5 w-10 h-10 rounded-full bg-black/50 border border-card-border flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all z-50 cursor-pointer"
+              className="fixed top-4 right-4 md:absolute md:top-5 md:right-5 w-10 h-10 rounded-full bg-black/50 border border-card-border flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 transition-all z-50 cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -137,7 +138,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
             </div>
 
             {/* Right Column: Information Sheet */}
-            <div className="w-full md:w-[55%] h-auto md:h-full p-6 sm:p-8 md:p-12 overflow-y-visible md:overflow-y-auto flex flex-col justify-between">
+            <div className="w-full md:w-[55%] h-auto md:h-full p-6 pb-20 sm:p-8 sm:pb-24 md:p-12 overflow-y-visible md:overflow-y-auto flex flex-col justify-between">
               {/* Product header info */}
               <div>
                 <div className="flex items-center gap-2 text-xs font-medium text-pink-accent mb-3 font-outfit uppercase tracking-widest">
