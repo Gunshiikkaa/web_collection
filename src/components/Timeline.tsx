@@ -109,18 +109,18 @@ export default function Timeline() {
                     </motion.div>
                   </div>
 
-                  {/* Desktop Layout - Left Side Cards */}
-                  <div className={`w-full md:w-1/2 pl-[70px] md:pl-0 md:pr-16 flex justify-end order-2 md:order-1 ${
-                    isEven ? "md:opacity-100" : "md:opacity-0 md:pointer-events-none md:absolute"
+                  {/* Left Side: Empty or Card */}
+                  <div className={`w-full md:w-1/2 pl-[70px] md:pl-0 md:pr-16 flex md:justify-end ${
+                    isEven ? "block" : "hidden md:block md:invisible"
                   }`}>
                     {isEven && (
                       <TimelineCard step={step} alignment="right" />
                     )}
                   </div>
 
-                  {/* Desktop Layout - Right Side Cards */}
-                  <div className={`w-full md:w-1/2 pl-[70px] md:pl-16 flex justify-start order-3 md:order-2 ${
-                    !isEven ? "md:opacity-100" : "md:opacity-0 md:pointer-events-none md:absolute"
+                  {/* Right Side: Empty or Card */}
+                  <div className={`w-full md:w-1/2 pl-[70px] md:pl-16 flex md:justify-start ${
+                    !isEven ? "block" : "hidden md:block md:invisible"
                   }`}>
                     {!isEven && (
                       <TimelineCard step={step} alignment="left" />

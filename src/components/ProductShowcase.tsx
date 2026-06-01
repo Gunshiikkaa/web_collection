@@ -144,7 +144,7 @@ function ShowcaseCard({ product, onClick }: { product: Product; onClick: () => v
       onMouseEnter={handleMouseEnter}
       onClick={onClick}
       data-cursor="view"
-      className="w-[80vw] md:w-[42vw] max-w-[550px] h-[65vh] md:h-[60vh] rounded-3xl glass-panel relative flex flex-col justify-between overflow-hidden p-6 md:p-8 flex-shrink-0 cursor-pointer transition-shadow duration-500 shadow-2xl"
+      className="w-[85vw] sm:w-[60vw] md:w-[42vw] max-w-[500px] h-[520px] md:h-[550px] rounded-3xl glass-panel relative flex flex-col justify-between overflow-hidden p-6 md:p-8 flex-shrink-0 cursor-pointer transition-shadow duration-500 shadow-2xl"
       style={{
         transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) scale(${isHovered ? 1.015 : 1})`,
         transition: isHovered ? "box-shadow 0.3s, transform 0.05s ease-out" : "box-shadow 0.5s, transform 0.5s ease-out",
