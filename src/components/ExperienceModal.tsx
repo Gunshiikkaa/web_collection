@@ -50,7 +50,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 30 }}
             transition={{ type: "spring", damping: 25, stiffness: 220 }}
-            className="relative w-full max-w-6xl h-[85vh] sm:h-[80vh] md:h-[75vh] bg-[#09090b] border border-card-border rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row z-10"
+            className="relative w-full max-w-6xl h-[85vh] sm:h-[80vh] md:h-[75vh] bg-[#09090b] border border-card-border rounded-3xl overflow-y-auto md:overflow-hidden shadow-2xl flex flex-col md:flex-row z-10"
           >
             {/* Close Button */}
             <button
@@ -61,7 +61,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
             </button>
 
             {/* Left Column: Media / Live Emulation Visuals */}
-            <div className="w-full md:w-[45%] h-[35%] md:h-full bg-[#030303] relative border-b md:border-b-0 md:border-r border-card-border flex items-center justify-center p-8 overflow-hidden">
+            <div className="w-full md:w-[45%] h-64 sm:h-72 md:h-full flex-shrink-0 bg-[#030303] relative border-b md:border-b-0 md:border-r border-card-border flex items-center justify-center p-8 overflow-hidden">
               {/* Product Background Mockup Image */}
               <img
                 src={`/${product.id}.png`}
@@ -137,7 +137,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
             </div>
 
             {/* Right Column: Information Sheet */}
-            <div className="w-full md:w-[55%] h-[65%] md:h-full p-6 sm:p-8 md:p-12 overflow-y-auto flex flex-col justify-between">
+            <div className="w-full md:w-[55%] h-auto md:h-full p-6 sm:p-8 md:p-12 overflow-y-visible md:overflow-y-auto flex flex-col justify-between">
               {/* Product header info */}
               <div>
                 <div className="flex items-center gap-2 text-xs font-medium text-pink-accent mb-3 font-outfit uppercase tracking-widest">
