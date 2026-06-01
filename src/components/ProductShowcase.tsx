@@ -86,7 +86,7 @@ export default function ProductShowcase({ onSelectProduct }: ProductShowcaseProp
             </div>
             <a
               href={`https://wa.me/917703950966?text=${encodeURIComponent(
-                "Hi AuraCraft! I have a unique idea for a custom website design and want to request a bespoke package. Let's talk details!"
+                "Hi Thee_Basicss! I have a unique idea for a custom website design and want to request a bespoke package. Let's talk details!"
               )}`}
               target="_blank"
               rel="noopener noreferrer"

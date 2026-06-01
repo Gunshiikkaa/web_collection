@@ -15,18 +15,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AuraCraft | Custom Interactive Websites & Premium Digital Experiences",
+  title: "Thee_Basicss | Custom Interactive Websites & Premium Digital Experiences",
   description: "Not Just Websites. Memories You Can Interact With. Premium bespoke digital experiences crafted for love stories, relationships, birthdays, anniversaries, and unforgettable moments.",
   keywords: ["interactive website", "relationship gift website", "custom digital experience", "birthday cake website", "heart lock website", "personalized spotify website", "creative agency", "Awwwards website"],
-  authors: [{ name: "AuraCraft Studio" }],
+  authors: [{ name: "Thee_Basicss Studio" }],
   openGraph: {
-    title: "AuraCraft | Custom Interactive Websites & Premium Digital Experiences",
+    title: "Thee_Basicss | Custom Interactive Websites & Premium Digital Experiences",
     description: "Not Just Websites. Memories You Can Interact With. Premium bespoke digital experiences crafted for love stories, birthdays, and special occasions.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AuraCraft | Custom Interactive Websites & Premium Digital Experiences",
+    title: "Thee_Basicss | Custom Interactive Websites & Premium Digital Experiences",
     description: "Not Just Websites. Memories You Can Interact With.",
   },
 };

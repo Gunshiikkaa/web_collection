@@ -39,7 +39,7 @@ export default function FinalCTA() {
           <div className="flex flex-col sm:flex-row gap-4 mt-12 w-full sm:w-auto">
             <a
               href={`https://wa.me/917703950966?text=${encodeURIComponent(
-                "Hi AuraCraft! I am ready to order a custom interactive website experience. Let's get started!"
+                "Hi Thee_Basicss! I am ready to order a custom interactive website experience. Let's get started!"
               )}`}
               target="_blank"
               rel="noopener noreferrer"

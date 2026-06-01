@@ -5,9 +5,9 @@ import { Check, Sparkles } from "lucide-react";
 
 export default function Pricing() {
   const getWhatsAppLink = (planName: string, price: string) => {
-    const phone = "1234567890"; // Prefilled contact phone, customizable
+    const phone = "917703950966"; // Prefilled contact phone
     const text = encodeURIComponent(
-      `Hi AuraCraft! I am looking to order the ${planName} package (${price}) for a custom interactive experience. I'd love to share my details and get started!`
+      `Hi Thee_Basicss! I am looking to order the ${planName} package (${price}) for a custom interactive experience. I'd love to share my details and get started!`
     );
     return `https://wa.me/${phone}?text=${text}`;
   };

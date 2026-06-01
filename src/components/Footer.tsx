@@ -17,7 +17,7 @@ export default function Footer() {
           {/* Logo & Pitch */}
           <div>
             <h3 className="text-2xl font-black font-outfit tracking-tighter text-white">
-              Aura<span className="text-pink-accent">Craft</span>
+              Thee_<span className="text-pink-accent">Basicss</span>
             </h3>
             <p className="text-gray-500 text-xs md:text-sm mt-3 max-w-xs leading-relaxed">
               Crafting premium interactive digital experiences and custom web keepsakes for relationships, anniversaries, birthdays, and unforgettable moments.
@@ -59,7 +59,7 @@ export default function Footer() {
 
               {/* Email */}
               <a
-                href="mailto:hello@auracraft.studio"
+                href="mailto:hello@theebasicss.studio"
                 className="w-11 h-11 rounded-full border border-card-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white/20 bg-card-bg/20 hover:bg-white/5 transition-all select-none cursor-pointer"
                 title="Send Email"
               >
@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Bottom copyright details */}
         <div className="flex flex-col sm:flex-row justify-between items-center border-t border-card-border/40 mt-12 pt-8 text-[11px] text-gray-500 gap-4">
-          <span>&copy; {currentYear} AuraCraft Studio. All rights reserved.</span>
+          <span>&copy; {currentYear} Thee_Basicss Studio. All rights reserved.</span>
           <button
             onClick={handleBackToTop}
             className="hover:text-white transition-colors cursor-pointer font-semibold uppercase tracking-wider font-outfit"

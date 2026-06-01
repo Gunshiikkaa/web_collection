@@ -186,7 +186,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
 
                 <a
                   href={`https://wa.me/917703950966?text=${encodeURIComponent(
-                    `Hi AuraCraft! I would like to order the custom "${product.title}" interactive website experience. Let's discuss details!`
+                    `Hi Thee_Basicss! I would like to order the custom "${product.title}" interactive website experience. Let's discuss details!`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
