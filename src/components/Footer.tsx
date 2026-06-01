@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               {/* Instagram */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/thee_basicss?igsh=MW9vZ3Y1cGltZWdubw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-full border border-card-border flex items-center justify-center text-gray-400 hover:text-white hover:border-white/20 bg-card-bg/20 hover:bg-white/5 transition-all select-none cursor-pointer"

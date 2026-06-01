@@ -6,7 +6,6 @@ import CustomCursor from "@/components/CustomCursor";
 import Particles from "@/components/Particles";
 import Hero from "@/components/Hero";
 import ProductShowcase from "@/components/ProductShowcase";
-import Statistics from "@/components/Statistics";
 import Timeline from "@/components/Timeline";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
@@ -41,9 +40,6 @@ export default function Home() {
         <div id="showcase">
           <ProductShowcase onSelectProduct={handleSelectProduct} />
         </div>
-
-        {/* Why Choose Us / Statistics */}
-        <Statistics />
 
         {/* Timeline / How it works */}
         <Timeline />
