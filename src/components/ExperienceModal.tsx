@@ -184,15 +184,12 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
                   View Live Demo
                 </a>
 
-                <button
-                  onClick={() => {
-                    onClose();
-                    // Smooth scroll to pricing
-                    setTimeout(() => {
-                      const el = document.getElementById("pricing");
-                      if (el) el.scrollIntoView({ behavior: "smooth" });
-                    }, 350);
-                  }}
+                <a
+                  href={`https://wa.me/917703950966?text=${encodeURIComponent(
+                    `Hi AuraCraft! I would like to order the custom "${product.title}" interactive website experience. Let's discuss details!`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-4 rounded-xl text-white text-sm font-semibold flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all select-none cursor-pointer"
                   style={{
                     background: `linear-gradient(135deg, ${product.accentColor}, #000)`,
@@ -201,7 +198,7 @@ export default function ExperienceModal({ product, isOpen, onClose }: Experience
                 >
                   Order This Experience
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>

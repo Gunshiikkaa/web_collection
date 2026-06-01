@@ -84,16 +84,17 @@ export default function ProductShowcase({ onSelectProduct }: ProductShowcaseProp
                 We design entirely custom concepts tailored exactly to your relationship, brand, or memory.
               </p>
             </div>
-            <button
-              onClick={() => {
-                const el = document.getElementById("pricing");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-              }}
+            <a
+              href={`https://wa.me/917703950966?text=${encodeURIComponent(
+                "Hi AuraCraft! I have a unique idea for a custom website design and want to request a bespoke package. Let's talk details!"
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 px-6 py-4 rounded-xl bg-white text-black font-semibold text-sm flex items-center justify-between group hover:bg-pink-accent hover:text-white transition-all duration-300"
             >
               Request Custom Design
               <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

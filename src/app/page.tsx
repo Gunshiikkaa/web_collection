@@ -9,7 +9,6 @@ import ProductShowcase from "@/components/ProductShowcase";
 import Statistics from "@/components/Statistics";
 import Timeline from "@/components/Timeline";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import ExperienceModal from "@/components/ExperienceModal";
@@ -51,9 +50,6 @@ export default function Home() {
 
         {/* Continuous Testimonials slider */}
         <Testimonials />
-
-        {/* Pricing Matrix */}
-        <Pricing />
 
         {/* Final emotional call-to-action */}
         <FinalCTA />

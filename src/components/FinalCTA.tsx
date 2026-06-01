@@ -37,16 +37,17 @@ export default function FinalCTA() {
 
           {/* Action CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mt-12 w-full sm:w-auto">
-            <button
-              onClick={() => {
-                const el = document.getElementById("pricing");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-              }}
+            <a
+              href={`https://wa.me/917703950966?text=${encodeURIComponent(
+                "Hi AuraCraft! I am ready to order a custom interactive website experience. Let's get started!"
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4.5 rounded-xl bg-gradient-to-r from-pink-accent to-purple-accent text-white font-semibold font-outfit text-sm hover:opacity-95 transition-all hover:scale-105 active:scale-95 cursor-pointer flex items-center justify-center gap-1.5 shadow-[0_0_25px_rgba(255,0,127,0.2)]"
             >
               Order Now
               <ArrowUpRight className="w-4 h-4" />
-            </button>
+            </a>
 
             <button
               onClick={() => {
